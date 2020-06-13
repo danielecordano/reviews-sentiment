@@ -1,8 +1,4 @@
 cd 'C:\projects\reviews-sentiment\'
-.\venv\Scripts\activate
-$env:GOOGLE_APPLICATION_CREDENTIALS="C:\projects\keys\.json"
-py .\client.py
-deactivate
 gcloud auth login
 $env:PROJECT_ID="reviews-sentiment-278909"
 gcloud config set project $env:PROJECT_ID
